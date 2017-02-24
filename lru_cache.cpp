@@ -56,9 +56,7 @@ void LRU_Cache::remove_elem(int key)
 
 Data_class LRU_Cache::call_data(int key)
 {
-    //assert(is_empty(key));  // way with removing element and insert again to the head of cache
-    //item_map.erase(key);
-    //item_map.insert(*it);
+    assert(is_empty(key));  // way with removing element and insert again to the head of cache
 
     auto it = item_map.find(key);
 
